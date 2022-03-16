@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hide and Show Content with Tabs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="tabs">
+            <ul class="tabs">
+                <li class="active" data-list="tab_1">Bicycle</li>
+                <li data-list="tab_2">Bike </li>
+                <li data-list="tab_3">Car </li>
+                <li data-list="tab_4">Truck</li>
+            </ul>
+        </div>
+        <!-- accordion start -->
+        <div class="accordion_wrapper">
+            <div class="accordion_item">
+                <div class="accordion_tab active" data-acco="acco1">
+                    Music
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content acco1" id="content1">
+                    <p>Lorem ipsum dolor.</p>
+                </div>
+            </div>
+
+            <div class="accordion_item">
+                <div class="accordion_tab" data-acco="acco2">
+                    Sport
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content acco2" id="content2">
+                    <p>Lorem ipsum dolor.</p>
+                </div>
+            </div>
+            <div class="accordion_item">
+                <div class="accordion_tab" data-acco="acco3">
+                    Books
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content acco3" id="content3">
+                    <p>Lorem ipsum dolo.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- accordion end -->
+        <!-- tabs content start -->
+        <div class="content">
+            <div class="tab_content tab_1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="tab_content tab_2">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </div>
+            <div class="tab_content tab_3">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="tab_content tab_4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+        <!-- sub tab start -->
+        <ul class="subtabs">
+            <li data-tab="subTab1" class="subTab">Tab1</li>
+            <li data-tab="subTab2" class="subTab">Tab2</li>
+            <li data-tab="subTab3" class="subTab">Tab3</li>
+        </ul>
+        <!-- sub tab end -->
+        <!-- sub tab contents start -->
+        <div class="contents">
+            <div class="tab_contents subTab1">
+                Tab1 <br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Ipsum.
+            </div>
+            <div class="tab_contents subTab2">
+                Tab2 <br>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved over the years, sometimes by accident, purpose .
+            </div>
+            <div class="tab_contents subTab3">
+                Tab3 <br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions Ipsum.
+            </div>
+        </div>
+        <!-- sub tab contents end -->
+
+
+    </div>
+    <!-- tabs content end -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button slide up and slide down using jquery</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="section-title">Payment Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="rdoBankAccount">
+                        <input type="radio" name="payment" id="rdoBankAccount" data-target="#bank-account">Bank Account
+                    </label>
+                </div>
+                <div class="payment-type" id="bank-account">
+                    <div class="form-group">
+                        <label for="txtBankName">Bank Name</label><br>
+                        <input type="text" id="txtBankName">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtAccountName">Account Name</label><br>
+                        <input type="text" id="txtAccountName">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="rdoCreditCard">
+                        <input type="radio" name="payment" id="rdoCreditCard" data-target="#credit-card">
+                        Credit Card</label>
+                </div>
+                <div class="payment-type" id="credit-card">
+                    <div class="form-group">
+                        <label for="txtNameOnCard">Name On Card </label><br>
+                        <input type="text" id="txtNameOnCard">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtCardNumber">CardNumber</label><br>
+                        <input type="text" id="txtCardNumber">
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

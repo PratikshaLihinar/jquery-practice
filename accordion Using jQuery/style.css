@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+
+}
+
+body{
+    background: #f8f9fb;
+
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto;
+}
+.wrapper .title{
+    margin-bottom: 25px;
+    background: #5393dc;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 2px;
+    font-weight: 700;
+}
+.wrapper .accordion_item{
+    margin: 25px;
+    box-shadow: 0 0 5px rgba(225, 225, 225, 0.5);
+
+}
+.wrapper .accordion_item .accordion_tab{
+    background: #fff;
+    padding: 20px;
+    color: #2e3038;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.wrapper .accordion_item .accordion_tab .arrow{
+    position: absolute;
+    top:20px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    
+}
+.wrapper .accordion_item .accordion_content{
+    background: #fff;
+    transition: all 0.3s ease;
+    display: none;
+
+}
+.wrapper .accordion_item .accordion_content p{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 20px;
+    color: #858aa5;
+
+
+}
+
+.wrapper .accordion_item .accordion_tab.active{
+    color: #fff;
+    background: #5393dc;
+}
+
+.wrapper .accordion_item .accordion_tab.active img{
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: all 0.3s ease;
+    
+}
+
+.wrapper .accordion_item .accordion_tab.active + .accordion_content{
+    display: block;
+}
+
+.menu{
+   
+    width: 100%;
+    height: auto;
+    margin-left: 25px;
+}
+button{
+    padding: 6px;
+    border: none;
+    color: #fff;
+    background: #5393dc;
+    font-size: 14px;
+    font-weight: 600;
+}

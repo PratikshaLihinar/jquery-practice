@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light box using jquery</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1> light box using jquery</h1>
+
+        <ul class="content">
+            <li data-src="image/gallery1.png" class="lightbox"><img src="image/gallery1.png" ></li>
+            <li data-src="image/gallery2.png" class="lightbox"><img src="image/gallery2.png" ></li>
+            <li data-src="image/gallery3.png" class="lightbox"><img src="image/gallery3.png" ></li>
+            <li data-src="image/gallery4.png" class="lightbox"><img src="image/gallery4.png" ></li>
+        </ul>
+    </div>
+    <div id="lightbox" style="display: none;">
+        <p>Click to close</p>
+        <div id="content">
+        <img src="#" />
+        </div>
+    </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>

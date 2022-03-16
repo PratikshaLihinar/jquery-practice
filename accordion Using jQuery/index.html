@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Accordion</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        
+        
+        <div class="title">
+            Accordion
+        </div>
+        <div class="menu">
+            <button class="expandAll">Expand All</button>
+            <button class="collapseAll">Collapse All</button>
+            <button class="music" data-types="music">Music</button>
+            <button class="sport" data-types="sport">Sport</button>
+            <button class="books" data-types="books">Books</button>
+            <button class="movies" data-types="movies">Movies</button>
+            <button class="nature" data-types="nature">Nature</button>
+        </div>
+        <div class="accordion_wrapper">
+            <div class="accordion_item">
+                <div class="accordion_tab music active" >
+                    Music
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content music" id="content1">
+                    <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempore sed exercitationem suscipit consectetur! Iusto nobis accusamus ipsa. Facere, adipisci.</p>
+                </div>
+            </div>
+            
+            <div class="accordion_item">
+                <div class="accordion_tab sport" >
+                    Sport
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content sport" id="content2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempore sed exercitationem suscipit consectetur! Iusto nobis accusamus ipsa. Facere, adipisci.</p>
+                </div>
+            </div>
+            <div class="accordion_item">
+                <div class="accordion_tab books" >
+                    Books
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content books" id="content3">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempore sed exercitationem suscipit consectetur! Iusto nobis accusamus ipsa. Facere, adipisci.</p>
+                </div>
+            </div>
+            <div class="accordion_item">
+                <div class="accordion_tab movies" >
+                    Movies
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content movies" id="content4">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempore sed exercitationem suscipit consectetur! Iusto nobis accusamus ipsa. Facere, adipisci.</p>
+                </div>
+            </div>
+            <div class="accordion_item">
+                <div class="accordion_tab nature" >
+                    Nature
+                    <div class="arrow">
+                        <img src="image/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                <div class="accordion_content nature" id="content5">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempore sed exercitationem suscipit consectetur! Iusto nobis accusamus ipsa. Facere, adipisci.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
